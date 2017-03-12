@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/csshortcut/csshortcut-app/issues"
   },
-  "homepage": "https://github.com/csshortcut/csshortcut-app#readme"
+  "homepage": "https://github.com/csshortcut/csshortcut-app#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0"
+  }
 }
