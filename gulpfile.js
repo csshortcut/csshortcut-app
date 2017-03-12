@@ -14,4 +14,9 @@ gulp.task('stylus', function() {
         .pipe(gulp.dest('./out/assets/styles/'))
 })
 
+gulp.task('watch', function() {
+    gulp.watch(['./src/*.pug'],['pug'])
+    gulp.watch(['./src/assets/styles/*.styl'],['stylus'])
+})
+
 gulp.task('build', ['pug','stylus'])
