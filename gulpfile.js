@@ -18,7 +18,7 @@ gulp.task('stylus', function() {
 })
 
 gulp.task('watch', function() {
-    gulp.watch(['./src/*.pug'],['pug'])
+    gulp.watch(['./src/*.pug','./src/partials/*.pug','./src/layouts/*.pug'],['pug'])
     gulp.watch(['./src/assets/styles/*.styl'],['stylus'])
 })
 
