@@ -1,72 +1,8 @@
-/* Colors */
-highlight-color = #ff0066
-secondary-color = #212121
-bg-color = #333
-
-/* Dev mode */
-border()
-    border: 1px dashed #000;
-
-/* Box model */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: bg-color;
-    font-weight: 300;
-}
-
-.main {
-    flex: 1;
-}
-
-// profile
-.profile {
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-    border()
-}
-
-.profile__profile-img {
-    border-radius: 50%;
-    width: 100%;
-    max-width: 200px;
-}
-
-.heading-lv1 {
-    color: #fff;
-    font-family: 'Lobster', cursive;
-    font-size: 42px;
-    margin: 5px;
-}
-
-.paragraph {
-    color: #fff;
-}
-
-.container-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    border()
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Partials */
-@import 'partials/header.styl'
-@import 'partials/footer.styl'
+@import 'modules/theme.styl'
+@import 'modules/global.styl'
+@import 'modules/profile.styl'
+@import 'modules/projects.styl'
+@import 'modules/texts.styl'
+@import 'modules/container.styl'
+@import 'modules/header.styl'
+@import 'modules/footer.styl'
