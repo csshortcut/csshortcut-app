@@ -11,6 +11,10 @@ body {
   background-color: #333;
   font-weight: 300;
 }
+.heart-icon,
+.star-icon {
+  fill: #f06;
+}
 .profile {
   width: 100%;
   max-width: 500px;
@@ -31,11 +35,41 @@ body {
   flex-wrap: wrap;
   width: 100%;
 }
+.projects-list .heading-lv1 {
+  margin: 20px 0;
+}
 .project {
   border: 1px dashed #000;
+  width: calc(50% - 10px);
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 5px;
 }
-.star-icon {
-  fill: #f06;
+@media (max-width: 500px) {
+  .project {
+    width: calc(100% - 10px);
+  }
+}
+.project-name {
+  color: #212121;
+  margin: 0;
+  font-weight: 300;
+}
+.project-star {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.project-star-count {
+  color: #212121;
+  margin-left: 5px;
+}
+.project-description {
+  color: #212121;
+  width: 100%;
+  margin: 10px 0 0 0;
 }
 .heading-lv1 {
   color: #fff;
@@ -121,7 +155,4 @@ body {
 .footer {
   height: 40px;
   background-color: #212121;
-}
-.heart-icon {
-  fill: #f06;
 }
