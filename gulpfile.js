@@ -3,9 +3,13 @@ var pug = require('gulp-pug')
 var stylus = require('gulp-stylus')
 var connect = require('gulp-connect')
 var imagemin = require('gulp-imagemin');
+var data = require('gulp-data');
 
 gulp.task('pug', function() {
     gulp.src('./src/*.pug')
+        .pipe(data(function() {
+            return require('./projects.json')
+        }))
         .pipe(pug())
         .pipe(gulp.dest('./out'))
         .pipe(connect.reload())

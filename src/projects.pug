@@ -6,31 +6,10 @@ block content
             section.projects-list
                 h1.heading-lv1 Projects
 
-                article.project
-                    h2.project-name Project name
-                    div.project-star
-                        include icons/star-icon.html
-                        span.project-star-count 000
-                    p.project-description Descricao do projeto
-
-                article.project
-                    h2.project-name Project name
-                    div.project-star
-                        include icons/star-icon.html
-                        span.project-star-count 000
-                    p.project-description Descricao do projeto
-
-                article.project
-                    h2.project-name Project name
-                    div.project-star
-                        include icons/star-icon.html
-                        span.project-star-count 000
-                    p.project-description Descricao do projeto
-
-                article.project
-                    h2.project-name Project name
-                    div.project-star
-                        include icons/star-icon.html
-                        span.project-star-count 000
-                    p.project-description Descricao do projeto
-
+                for project in projects
+                    article.project
+                        h2.project-name=project.name
+                        div.project-star
+                            include icons/star-icon.html
+                            span.project-star-count=project.stars
+                        p.project-description=project.description
