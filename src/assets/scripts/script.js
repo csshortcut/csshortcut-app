@@ -1,1 +1,5 @@
-console.log('ok')
+const foo = (x) => {
+    return x
+}
+
+foo('afonso')
