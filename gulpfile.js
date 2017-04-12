@@ -1,39 +1,37 @@
-var gulp = require('gulp')
-var pug = require('gulp-pug')
-var stylus = require('gulp-stylus')
-var connect = require('gulp-connect')
-var imagemin = require('gulp-imagemin');
-var data = require('gulp-data');
+const gulp = require('gulp')
+const pug = require('gulp-pug')
+const stylus = require('gulp-stylus')
+const connect = require('gulp-connect')
+const imagemin = require('gulp-imagemin');
+const data = require('gulp-data');
 
-gulp.task('pug', function() {
+gulp.task('pug', () => {
     gulp.src('./src/*.pug')
-        .pipe(data(function() {
-            return require('./projects.json')
-        }))
+        .pipe(data(() => require('./projects.json')))
         .pipe(pug())
         .pipe(gulp.dest('./out'))
         .pipe(connect.reload())
 })
 
-gulp.task('stylus', function() {
+gulp.task('stylus', () => {
     gulp.src('./src/assets/styles/*.styl')
         .pipe(stylus())
         .pipe(gulp.dest('./out/assets/styles/'))
         .pipe(connect.reload())
 })
 
-gulp.task('imagemin', function() {
+gulp.task('imagemin', () => {
     gulp.src('src/assets/img/*')
         .pipe(imagemin())
         .pipe(gulp.dest('out/assets/img/'))
 })
 
-gulp.task('watch', function() {
+gulp.task('watch', () => {
     gulp.watch(['./src/*.pug','./src/partials/*.pug','./src/layouts/*.pug'],['pug'])
     gulp.watch(['./src/assets/styles/*.styl','./src/assets/styles/modules/*.styl'],['stylus'])
 })
 
-gulp.task('serve', function() {
+gulp.task('serve', () => {
     connect.server({
         root: './out',
         livereload: true
