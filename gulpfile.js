@@ -54,7 +54,7 @@ gulp.task('imagemin', () => {
 
 gulp.task('watch', () => {
     gulp.watch(['./src/*.pug','./src/partials/*.pug','./src/layouts/*.pug'],['pug'])
-    gulp.watch(['./src/assets/styles/*.styl','./src/assets/styles/modules/*.styl'],['stylus'])
+    gulp.watch(['./src/assets/styles/*.styl','./src/assets/styles/modules/*.styl'],['stylint','stylus'])
     gulp.watch(['./src/assets/scripts/*.js'],['lint','babel'])
 })
 
@@ -65,5 +65,5 @@ gulp.task('serve', () => {
     })
 })
 
-gulp.task('build', ['pug','stylus','imagemin','lint','babel'])
+gulp.task('build', ['pug','stylint','stylus','imagemin','lint','babel'])
 gulp.task('server', ['serve','watch'])
