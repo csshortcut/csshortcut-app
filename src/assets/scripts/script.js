@@ -1,5 +1,5 @@
 const foo = (x) => {
-    return x
-}
+  return x;
+};
 
-foo('afonso')
+foo('demo');
