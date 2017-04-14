@@ -2,6 +2,8 @@
 
 > Projeto descolado <3
 
+[![Build Status](https://travis-ci.org/csshortcut/csshortcut-app.svg?branch=master)](https://travis-ci.org/csshortcut/csshortcut-app)
+
 ## Stack
 
 - Task Runner: [Gulp](http://gulpjs.com/)
