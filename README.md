@@ -3,6 +3,7 @@
 > Projeto descolado <3
 
 [![Build Status](https://travis-ci.org/csshortcut/csshortcut-app.svg?branch=master)](https://travis-ci.org/csshortcut/csshortcut-app)
+[![devDependencies Status](https://david-dm.org/csshortcut/csshortcut-app/dev-status.svg)](https://david-dm.org/csshortcut/csshortcut-app?type=dev)
 
 ## Stack
 
