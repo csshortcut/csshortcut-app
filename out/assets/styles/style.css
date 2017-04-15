@@ -88,6 +88,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+}
+.flipped {
+  height: 100%;
 }
 .container {
   border: 1px dashed #000;

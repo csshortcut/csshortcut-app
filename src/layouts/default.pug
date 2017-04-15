@@ -37,11 +37,13 @@ html(lang="en")
         //- ===========================================
         link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|RobotoRoboto:300,400")
 
-    body
+    body(data-senna)
         include ./../partials/header.pug
 
-        block content
+        main(data-senna-surface)#content.main
+            block content
 
         include ./../partials/footer.pug
 
         script(type="text/javascript" src="assets/scripts/script.js" async)
+        script(type="text/javascript" src="https://cdn.jsdelivr.net/senna.js/2.1.5/senna-min.js")
