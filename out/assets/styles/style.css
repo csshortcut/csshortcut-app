@@ -19,7 +19,7 @@ body {
   width: 100%;
   max-width: 500px;
   text-align: center;
-  border: 1px dashed #000;
+  border: 0px dashed #000;
 }
 .profile-img {
   border-radius: 50%;
@@ -30,7 +30,7 @@ body {
   width: 100%;
 }
 .projects-list {
-  border: 1px dashed #000;
+  border: 0px dashed #000;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -39,7 +39,7 @@ body {
   margin: 20px 0;
 }
 .project {
-  border: 1px dashed #000;
+  border: 0px dashed #000;
   width: calc(50% - 10px);
   background-color: #fff;
   display: flex;
@@ -94,7 +94,7 @@ body {
   height: 100%;
 }
 .container {
-  border: 1px dashed #000;
+  border: 0px dashed #000;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -108,7 +108,7 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  border: 1px dashed #000;
+  border: 0px dashed #000;
 }
 @media screen and (max-width: 400px) {
   .menu {
@@ -135,7 +135,7 @@ body {
   padding: 10px;
 }
 .profile-header {
-  border: 1px dashed #000;
+  border: 0px dashed #000;
   margin-left: auto;
 }
 @media screen and (max-width: 400px) {
