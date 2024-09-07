@@ -2,9 +2,6 @@
 
 > Projeto descolado <3
 
-[![Build Status](https://travis-ci.org/csshortcut/csshortcut-app.svg?branch=master)](https://travis-ci.org/csshortcut/csshortcut-app)
-[![devDependencies Status](https://david-dm.org/csshortcut/csshortcut-app/dev-status.svg)](https://david-dm.org/csshortcut/csshortcut-app?type=dev)
-
 ## Stack
 
 - Task Runner: [Gulp](http://gulpjs.com/)
@@ -66,7 +63,6 @@ $ gulp server
 
 - `$ gulp build`: Compile, concat and minify all files.
 - `$ gulp server`: Watch the files to build and start a static server.
-- `$ gulp deploy`: Deploy for gh-pages.
 
 ## Versioning
 
