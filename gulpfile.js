@@ -8,11 +8,22 @@ const babelPlugin = require('gulp-babel')
 const eslint = require('gulp-eslint')
 const stylint = require('gulp-stylint')
 
-const pug = () => src('./src/*.pug')
-    .pipe(data(function() { return require('./projects.json') }))
-    .pipe(pugPlugin())
-    .pipe(dest('./out'))
-    .pipe(connect.reload())
+const pug = done => {
+
+    fetch('https://api.github.com/users/afonsopacifer/repos')
+        .then(res => res.json())
+        .then(repos => {
+
+            src('./src/*.pug')
+                .pipe(data(function() { return { projects: repos } }))
+                .pipe(pugPlugin())
+                .pipe(dest('./out'))
+                .pipe(connect.reload())
+
+            done();
+    
+        })
+}
 
 const stylus = () => src('./src/assets/styles/*.styl')
     .pipe(stylusPlugin())
